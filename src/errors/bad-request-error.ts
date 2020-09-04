@@ -2,7 +2,7 @@ import { CustomError } from './custom-error';
 
 // - 'Invalid credentials' were entered to the 
 // Sign In form
-// - 'Email in use' wheneve trying to sign up
+// - 'Email in use' whenever trying to sign up
 export class BadRequestError extends CustomError {
   statusCode = 400;
 

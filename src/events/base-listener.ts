@@ -13,7 +13,7 @@ export abstract class Listener<T extends Event> {
   // Function to run when a message is received
   abstract onMessage(data: T['data'], msg: Message): void;
   // Pre-initialized NATS client
-  private client: Stan;
+  protected client: Stan;
   // Name of the queue group & 
   abstract queueGroupName: string;
   // Number of milliseconds this listener has to acknowledge a message
